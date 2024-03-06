@@ -71,6 +71,10 @@ group :test do
   gem "webdrivers"
 end
 
+group :production do
+  gem 'pg'
+end
+
 gem "cssbundling-rails", "~> 1.4"
 
 gem "devise", github: "heartcombo/devise", branch: "main"
