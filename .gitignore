@@ -48,3 +48,11 @@
 /.idea/git_toolbox_prj.xml
 /.idea/JetClient/history.xml
 /.idea/JetClient/settings.xml
+
+# Vite Ruby
+/public/vite*
+node_modules
+# Vite uses dotenv and suggests to ignore local-only env files. See
+# https://vitejs.dev/guide/env-and-mode.html#env-files
+*.local
+
