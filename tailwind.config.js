@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 const colors = require('tailwindcss/colors')
 const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
     content: [
         './app/helpers/**/*.rb',
@@ -15,7 +16,8 @@ module.exports = {
                 "Helvetica Neue", "sans-serif"],
             'mono': ["Consolas", "Menlo", "Monaco", "Andale Mono", "Ubuntu Mono", "monospace"]
         },
-        extend: {}
+        extend: {
+        },
     },
     corePlugins: {
         aspectRatio: false,
@@ -27,4 +29,3 @@ module.exports = {
         require('@tailwindcss/line-clamp'),
     ],
 }
-

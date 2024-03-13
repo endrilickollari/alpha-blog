@@ -1,7 +1,6 @@
-// Import and register all your controllers from the importmap under controllers/*
+import { Application } from '@hotwired/stimulus'
+import { registerControllers } from 'stimulus-vite-helpers'
 
-import { Application } from "@hotwired/stimulus"
-import { registerControllers } from "stimulus-vite-helpers"
-const application = Application.start();
-const controllers = import.meta.globEager('./**/*_controller.js')
+const application = Application.start()
+const controllers = import.meta.glob('./**/*_controller.js', {eager: true})
 registerControllers(application, controllers)
