@@ -48,6 +48,7 @@
 /.idea/git_toolbox_prj.xml
 /.idea/JetClient/history.xml
 /.idea/JetClient/settings.xml
+/.idea/jsLibraryMappings.xml
 
 # Vite Ruby
 /public/vite*
