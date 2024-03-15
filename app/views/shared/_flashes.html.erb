@@ -1,15 +1,11 @@
-<%# flash.each do |name, msg| %>
-<%#= msg %>
-<%# end %>
-
 <% if notice %>
-  <div class="p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400" role="alert" style="margin-top: 15px;
-    width: fit-content;
-    margin-left: 87%;">
+  <div class="alert alert-info alert-dismissible fade show m-1" role="alert">
     <%= notice %>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
   </div>
 <% end %>
-
 
 <% if alert %>
   <div class="alert alert-warning alert-dismissible fade show m-1" role="alert">
